@@ -3,13 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Világos szürke háttér */
+    color: #333; /* Sötét szürke szöveg */
     text-align: center; /* Középre igazítás az oldal szövegéhez */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #f5deb3; /* Halvány barna háttér */
+    color: #333; /* Sötét szürke szöveg */
     padding: 10px 0;
     text-align: center; /* Középre igazítás a fejléc szövegéhez */
 }
@@ -24,6 +25,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Középre igazítás a navigációs menühöz */
+    background: #d1e7dd; /* Világos zöld háttér */
 }
 
 nav ul li {
@@ -31,20 +33,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333; /* Sötét szürke szöveg */
     text-decoration: none;
 }
 
 section {
     padding: 20px;
     margin: 10px auto;
-    background: #fff;
+    background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
 }
 
 section h2 {
     margin-top: 0;
+    color: #4a4a4a; /* Sötétebb szürke a címsorhoz */
 }
 
 .services-container {
@@ -55,7 +58,7 @@ section h2 {
 }
 
 .service-card {
-    background: #f9f9f9;
+    background: #f5f5f5; /* Halvány krém szín */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
@@ -67,7 +70,7 @@ section h2 {
 }
 
 .modal-btn {
-    background-color: #4CAF50;
+    background-color: #6c757d; /* Szürke-zöld gomb háttér */
     color: white;
     border: none;
     padding: 10px;
@@ -89,7 +92,7 @@ section h2 {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff; /* Fehér háttér */
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -129,8 +132,8 @@ iframe {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
+    background: #f5deb3; /* Halvány barna háttér */
+    color: #333; /* Sötét szürke szöveg */
 }
 
 ul {
