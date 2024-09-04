@@ -1,29 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const services = document.querySelectorAll('.service');
-    let activeDropdown = null;
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-    services.forEach(service => {
-        const header = service.querySelector('.service-header');
-        const dropdownContent = service.querySelector('.dropdown-content');
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('.dropbtn');
+        const content = dropdown.querySelector('.dropdown-content');
 
-        header.addEventListener('click', () => {
-            if (activeDropdown && activeDropdown !== dropdownContent) {
-                activeDropdown.style.maxHeight = null;
-                activeDropdown.style.opacity = 0;
-                activeDropdown.classList.remove('active');
-            }
+        button.addEventListener('click', () => {
+            const isActive = content.style.display === 'block';
 
-            if (dropdownContent.style.maxHeight) {
-                dropdownContent.style.maxHeight = null;
-                dropdownContent.style.opacity = 0;
-                dropdownContent.classList.remove('active');
-                activeDropdown = null;
-            } else {
-                dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
-                dropdownContent.style.opacity = 1;
-                dropdownContent.classList.add('active');
-                activeDropdown = dropdownContent;
-            }
+            dropdowns.forEach(d => {
+                const c = d.querySelector('.dropdown-content');
+                if (d !== dropdown) {
+                    c.style.display = 'none';
+                }
+            });
+
+            content.style.display = isActive ? 'none' : 'block';
         });
     });
 });
