@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center; /* Középre igazítás az oldal szövegéhez */
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Középre igazítás a fejléc szövegéhez */
 }
 
 header h1 {
@@ -21,10 +22,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Középre igazítás a navigációs menühöz */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -35,9 +37,10 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     background: #fff;
     border-radius: 8px;
+    max-width: 800px; /* Maximális szélesség beállítása */
 }
 
 section h2 {
@@ -48,6 +51,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Középre igazítás a szolgáltatások kártyáihoz */
 }
 
 .service-card {
@@ -58,10 +62,7 @@ section h2 {
     width: calc(50% - 20px); /* Két kártya soronként */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     box-sizing: border-box;
-}
-
-.service-card h3 {
-    margin-top: 0;
+    text-align: left; /* Szöveg balra igazítása a kártyában */
 }
 
 .modal-btn {
@@ -94,6 +95,7 @@ section h2 {
     width: 80%;
     max-width: 600px;
     border-radius: 8px;
+    text-align: left; /* Szöveg balra igazítása a modális ablakban */
 }
 
 .close-btn {
@@ -112,12 +114,15 @@ section h2 {
 
 .map {
     margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Középre igazítás a térképhez */
 }
 
 iframe {
     border: 0;
     width: 100%;
     height: 300px; /* Állítsd be a kívánt magasságot */
+    max-width: 600px; /* Maximális szélesség beállítása */
 }
 
 footer {
