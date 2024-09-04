@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Világos szürke háttér */
+    background-color: #f5f5dc; /* Halvány krémes háttér az oldal teljes háttérhez */
     color: #333; /* Sötét szürke szöveg */
     text-align: center; /* Középre igazítás az oldal szövegéhez */
 }
@@ -43,6 +43,7 @@ section {
     background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
+    border: 2px solid #d1e7dd; /* Világos zöld keret a szekciók körül */
 }
 
 section h2 {
@@ -55,6 +56,10 @@ section h2 {
     flex-direction: column; /* Egy oszlopba rendezi a kártyákat */
     align-items: center; /* Középre igazítás a kártyákhoz */
     gap: 20px; /* Kártyák közötti távolság */
+    border: 2px solid #d1e7dd; /* Világos zöld keret a szolgáltatások körül */
+    border-radius: 8px; /* Lekerekített sarkok */
+    padding: 20px; /* Belső távolság a kereten belül */
+    background: #fff; /* Fehér háttér a kereten belül */
 }
 
 .service-card {
