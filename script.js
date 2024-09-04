@@ -7,7 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     modalButtons.forEach(button => {
         button.addEventListener('click', () => {
             const modalId = button.getAttribute('data-modal');
-            document.getElementById(modalId).style.display = 'block';
+            modals.forEach(modal => {
+                if (modal.id === modalId) {
+                    modal.style.display = 'block';
+                } else {
+                    modal.style.display = 'none';
+                }
+            });
         });
     });
 
