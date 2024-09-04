@@ -1,23 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdowns = document.querySelectorAll('.dropdown');
+    const modalButtons = document.querySelectorAll('.modal-btn');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close-btn');
 
-    dropdowns.forEach(dropdown => {
-        const button = dropdown.querySelector('.dropbtn');
-        const content = dropdown.querySelector('.dropdown-content');
-
+    // Open modals
+    modalButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const isActive = content.style.display === 'block';
-
-            // Close all dropdowns
-            dropdowns.forEach(d => {
-                const c = d.querySelector('.dropdown-content');
-                if (c !== content) {
-                    c.style.display = 'none';
-                }
-            });
-
-            // Toggle the clicked dropdown
-            content.style.display = isActive ? 'none' : 'block';
+            const modalId = button.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'block';
         });
+    });
+
+    // Close modals
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = 'none';
+        });
+    });
+
+    // Close modals when clicking outside
+    window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
     });
 });
