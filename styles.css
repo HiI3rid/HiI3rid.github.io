@@ -67,6 +67,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .service-title {
@@ -78,31 +79,29 @@ footer {
     color: #4CAF50;
 }
 
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    text-align: left;
-}
-
-.dropbtn:hover {
-    background-color: #45a049;
-}
-
 .dropdown-content {
     display: none;
     margin-top: 10px;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 4px;
+    padding: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .dropdown-content p {
-    padding: 12px 16px;
     margin: 0;
-    text-align: left;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
 }
