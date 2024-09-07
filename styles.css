@@ -25,7 +25,7 @@ header h1 {
 
 header h2 {
     margin: 5px 0 20px;
-    font-size: 2em; /* Gyógy- és sportmasszőr betűméretének növelése */
+    font-size: 1em; /* Double the size of the "Gyógy- és sportmasszőr" text */
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 160px auto 40px; /* Felső margó növelése, hogy a Rólam szekció lejjebb kerüljön */
+    margin: 120px auto 40px; /* Adjusted margin */
     background: #fff;
     border-radius: 8px;
     max-width: 800px;
@@ -114,10 +114,6 @@ table th, table td {
 
 table th {
     background: #f5deb3;
-}
-
-.map {
-    margin-bottom: 40px; /* Térkép alatti üres tér */
 }
 
 footer {
