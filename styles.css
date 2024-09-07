@@ -11,28 +11,30 @@ body {
 header {
     background: #f5deb3; /* Halvány barna háttér */
     color: #333; /* Sötét szürke szöveg */
-    padding: 20px 0;
-    text-align: center; /* Középre igazítás */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* A fejléc mindig a többi elem felett legyen */
+    padding: 10px 0;
+    text-align: center; /* Középre igazítás a fejléc szövegéhez */
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px; /* Nagyobb betűméret */
-    text-transform: uppercase; /* Nagybetűs szöveg */
-    letter-spacing: 2px; /* Nagyobb betűköz */
 }
 
-header h2 {
+nav ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    font-size: 12px; /* Kisebb betűméret a cím aláírásához */
-    font-weight: normal; /* Normál súlyú betűk */
-    margin-top: 3px; /* Kisebb távolság a főcím alatt */
-    line-height: 1.2; /* Csökkentett sorok közötti térköz */
+    display: flex; /* Vízszintes elrendezés */
+    justify-content: center; /* Középre igazítás a navigációs menühöz */
+    background: #d1e7dd; /* Világos zöld háttér */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333; /* Sötét szürke szöveg */
+    text-decoration: none;
 }
 
 section {
@@ -150,7 +152,15 @@ li {
 }
 
 /* Táblázat stílus az árakhoz */
+#prices {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 800px; /* Maximális szélesség beállítása */
+}
+
 #prices ul {
+    list-style: none;
     padding: 0;
     margin: 0;
     display: table;
@@ -158,11 +168,27 @@ li {
     border-collapse: collapse;
 }
 
+#prices .header {
+    font-weight: bold;
+    background: #d1e7dd;
+}
+
+#prices .header li {
+    display: table-cell;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #d1e7dd;
+}
+
 #prices li {
     display: table-row;
 }
 
-#prices li::before {
+#prices li:not(.header) {
+    border-top: 1px solid #d1e7dd;
+}
+
+#prices li:not(.header)::before {
     content: "";
     display: table-cell;
     padding: 10px;
@@ -177,11 +203,9 @@ li {
     background: #fff;
 }
 
-#prices .header {
-    font-weight: bold;
-    background: #d1e7dd;
-}
-
-#prices .header li {
-    text-align: center;
+#prices .service-name {
+    display: table-cell;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #d1e7dd;
 }
