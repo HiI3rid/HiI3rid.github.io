@@ -19,11 +19,17 @@ header h1 {
     margin: 0;
 }
 
+.subtitle {
+    font-size: 1.2em; /* Növelt betűméret */
+    margin-top: 5px; /* Csökkentett térköz a fő cím és a subtitle között */
+    margin-bottom: 20px; /* Térköz alatta */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Vízszintes elrendezés */
+    display: flex;
     justify-content: center; /* Középre igazítás a navigációs menühöz */
     background: #d1e7dd; /* Világos zöld háttér */
 }
@@ -39,12 +45,11 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 10px auto;
+    margin: 20px auto; /* Megnövelt térköz a szekciók között */
     background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
     border: 2px solid #d1e7dd; /* Világos zöld keret a szekciók körül */
-    margin-top: 120px; /* Felső margó a fejléc alatt */
 }
 
 section h2 {
@@ -123,7 +128,7 @@ section h2 {
 }
 
 .map {
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: center; /* Középre igazítás a térképhez */
 }
@@ -151,61 +156,25 @@ li {
     margin-bottom: 10px; /* Listaelemek közötti távolság */
 }
 
-/* Táblázat stílus az árakhoz */
-#prices {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    max-width: 800px; /* Maximális szélesség beállítása */
-}
-
-#prices ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: table;
+/* Táblázat formázása */
+table {
     width: 100%;
     border-collapse: collapse;
+    margin: 20px auto; /* Megnövelt térköz a táblázat körül */
 }
 
-#prices .header {
-    font-weight: bold;
-    background: #d1e7dd;
-}
-
-#prices .header li {
-    display: table-cell;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
-    padding: 10px;
-    border: 1px solid #d1e7dd;
 }
 
-#prices li {
-    display: table-row;
+th {
+    background-color: #f5deb3; /* Halvány barna háttér a fejléchez */
+    color: #333;
 }
 
-#prices li:not(.header) {
-    border-top: 1px solid #d1e7dd;
-}
-
-#prices li:not(.header)::before {
-    content: "";
-    display: table-cell;
-    padding: 10px;
-    border: 1px solid #d1e7dd;
-}
-
-#prices li:nth-child(odd) {
-    background: #f5f5f5;
-}
-
-#prices li:nth-child(even) {
-    background: #fff;
-}
-
-#prices .service-name {
-    display: table-cell;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #d1e7dd;
+thead th {
+    background-color: #f5deb3; /* Halvány barna háttér a fejléchez */
+    color: #333;
 }
