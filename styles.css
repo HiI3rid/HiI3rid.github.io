@@ -59,6 +59,7 @@ section {
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
     border: 2px solid #d1e7dd; /* Világos zöld keret a szekciók körül */
+    margin-top: 100px; /* Felső margó a fejléc alatt */
 }
 
 section h2 {
