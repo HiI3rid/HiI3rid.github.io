@@ -3,107 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Weboldal Neve]</title>
+    <title>Dohány Eszter - Gyógy- és Sportmasszőr</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>[Weboldal Neve]</h1>
         <nav>
             <ul>
-                <li><a href="#about">Rólam</a></li>
                 <li><a href="#services">Szolgáltatások</a></li>
                 <li><a href="#prices">Árak</a></li>
                 <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
+        <div class="header-text">
+            <h1>Dohány Eszter</h1>
+            <h2>Gyógy- és Sportmasszőr</h2>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Rólam</h2>
-        <p>[Itt írd le röviden, hogy miről szól a weboldal, milyen szolgáltatásokkal foglalkozik, és bármit, amit fontosnak tartasz. Esetleg egy rövid bemutatkozás.]</p>
-    </section>
-
-    <section id="services">
+    <section id="services" class="content-section">
         <h2>Szolgáltatások</h2>
         <div class="services-container">
             <div class="service-card">
-                <h3>[Szolgáltatás1]</h3>
-                <button class="modal-btn" data-modal="modal1">Tovább</button>
+                <h3>Szolgáltatás 1</h3>
+                <button class="service-toggle">Tovább</button>
+                <div class="service-details">
+                    <p>Részletes információk a Szolgáltatás 1-ről.</p>
+                </div>
             </div>
             <div class="service-card">
-                <h3>[Szolgáltatás2]</h3>
-                <button class="modal-btn" data-modal="modal2">Tovább</button>
+                <h3>Szolgáltatás 2</h3>
+                <button class="service-toggle">Tovább</button>
+                <div class="service-details">
+                    <p>Részletes információk a Szolgáltatás 2-ről.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>[Szolgáltatás3]</h3>
-                <button class="modal-btn" data-modal="modal3">Tovább</button>
-            </div>
-            <div class="service-card">
-                <h3>[Szolgáltatás4]</h3>
-                <button class="modal-btn" data-modal="modal4">Tovább</button>
-            </div>
-        </div>
-
-        <!-- Modális ablakok -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" data-modal="modal1">&times;</span>
-                <h3>[Szolgáltatás1]</h3>
-                <p>[Szolgáltatás1 részletezése: részletes leírás, előnyök, egyéb információk.]</p>
-            </div>
-        </div>
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" data-modal="modal2">&times;</span>
-                <h3>[Szolgáltatás2]</h3>
-                <p>[Szolgáltatás2 részletezése: részletes leírás, előnyök, egyéb információk.]</p>
-            </div>
-        </div>
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" data-modal="modal3">&times;</span>
-                <h3>[Szolgáltatás3]</h3>
-                <p>[Szolgáltatás3 részletezése: részletes leírás, előnyök, egyéb információk.]</p>
-            </div>
-        </div>
-        <div id="modal4" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" data-modal="modal4">&times;</span>
-                <h3>[Szolgáltatás4]</h3>
-                <p>[Szolgáltatás4 részletezése: részletes leírás, előnyök, egyéb információk.]</p>
-            </div>
+            <!-- További szolgáltatások -->
         </div>
     </section>
 
-    <section id="prices">
+    <section id="prices" class="content-section">
         <h2>Árak</h2>
-        <ul>
-            <li>[Szolgáltatás1] - [Ár1]</li>
-            <li>[Szolgáltatás2] - [Ár2]</li>
-            <li>[Szolgáltatás3] - [Ár3]</li>
-            <li>[Szolgáltatás4] - [Ár4]</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Szolgáltatás</th>
+                    <th>60 perc</th>
+                    <th>90 perc</th>
+                    <th>Bérlet (5x60 perc)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Szolgáltatás 1</td>
+                    <td>8000 Ft</td>
+                    <td>12000 Ft</td>
+                    <td>36000 Ft</td>
+                </tr>
+                <tr>
+                    <td>Szolgáltatás 2</td>
+                    <td>7000 Ft</td>
+                    <td>10000 Ft</td>
+                    <td>30000 Ft</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="content-section">
         <h2>Kapcsolat</h2>
-        <p>[Ha bármilyen kérdése van, vagy szeretne kapcsolatba lépni, itt találhatóak az elérhetőségek:]</p>
-        <ul>
-            <li>Email: <a href="mailto:[email@domain.hu]">[email@domain.hu]</a></li>
-            <li>Telefon: <a href="tel:+36xxxxxxxxx">+36 [telefonszám]</a></li>
-            <li>Cím: [Cím]</li>
-        </ul>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2297.2755460782804!2d20.15888111600403!3d46.25606473029714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d594ba7a5ad7%3A0x1b84e3d383b58b5!2sAgyagos%20u.%203%2C%20Szeged!5e0!3m2!1shu!2shu!4v1696748187584!5m2!1shu!2shu"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <p>Email: <a href="mailto:dohanyeszti@gmail.com">dohanyeszti@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36305428872">+36 30 542 8872</a></p>
+        <div id="map"></div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 [Weboldal Neve]. Minden jog fenntartva.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
