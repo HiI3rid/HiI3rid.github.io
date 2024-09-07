@@ -29,9 +29,10 @@ header h1 {
 
 header h2 {
     margin: 0;
-    font-size: 20px; /* Kisebb betűméret */
+    font-size: 18px; /* Kisebb betűméret a cím aláírásához */
     font-weight: normal; /* Normál súlyú betűk */
-    margin-top: 10px; /* További távolság a főcím alatt */
+    margin-top: 5px; /* Kisebb távolság a főcím alatt */
+    line-height: 1.2; /* Csökkentett sorok közötti térköz */
 }
 
 nav ul {
