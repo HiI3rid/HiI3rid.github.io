@@ -11,8 +11,8 @@ body {
 header {
     background: #f5deb3; /* Halvány barna háttér */
     color: #333; /* Sötét szürke szöveg */
-    padding: 10px 0;
-    text-align: center; /* Középre igazítás a fejléc szövegéhez */
+    padding: 20px 0;
+    text-align: center; /* Középre igazítás */
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,6 +22,16 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 36px; /* Nagyobb betűméret */
+    text-transform: uppercase; /* Nagybetűs szöveg */
+    letter-spacing: 2px; /* Nagyobb betűköz */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 20px; /* Kisebb betűméret */
+    font-weight: normal; /* Normál súlyú betűk */
+    margin-top: 10px; /* További távolság a főcím alatt */
 }
 
 nav ul {
@@ -153,21 +163,4 @@ ul {
 
 li {
     margin-bottom: 10px; /* Listaelemek közötti távolság */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #d1e7dd;
-    color: #333;
 }
