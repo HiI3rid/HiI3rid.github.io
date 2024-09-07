@@ -11,10 +11,11 @@ body {
 header {
     background: #f5deb3; /* Halvány barna háttér */
     color: #333; /* Sötét szürke szöveg */
-    padding: 10px 0;
+    padding: 20px 0; /* Több térköz */
     text-align: center; /* Középre igazítás a fejléc szövegéhez */
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -23,10 +24,15 @@ header h1 {
     margin: 0;
 }
 
+header h2 {
+    margin: 5px 0; /* Kisebb térköz a címek között */
+    font-size: 0.5em; /* Fele akkora betűméret a második sorhoz */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0; /* Fölül nagyobb margó */
     display: flex;
     justify-content: center; /* Középre igazítás a navigációs menühöz */
     background: #d1e7dd; /* Világos zöld háttér */
@@ -43,7 +49,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 60px auto 20px; /* Növelt margó az oldal alján */
+    margin: 90px auto 40px; /* A fejléc alatt kezdődik, alul nagyobb margó */
     background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
@@ -152,4 +158,25 @@ ul {
 
 li {
     margin-bottom: 10px; /* Listaelemek közötti távolság */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
 }
