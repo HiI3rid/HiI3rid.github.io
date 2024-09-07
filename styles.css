@@ -13,6 +13,11 @@ header {
     color: #333; /* Sötét szürke szöveg */
     padding: 10px 0;
     text-align: center; /* Középre igazítás a fejléc szövegéhez */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Fixálás szintje */
 }
 
 header h1 {
@@ -25,13 +30,21 @@ header h1 {
     margin-bottom: 20px; /* Térköz alatta */
 }
 
+nav {
+    position: fixed;
+    top: 50px; /* Fejléc alatt */
+    left: 0;
+    width: 100%;
+    background: #d1e7dd; /* Világos zöld háttér */
+    z-index: 1000; /* Fixálás szintje */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center; /* Középre igazítás a navigációs menühöz */
-    background: #d1e7dd; /* Világos zöld háttér */
 }
 
 nav ul li {
@@ -45,7 +58,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 20px auto; /* Megnövelt térköz a szekciók között */
+    margin: 100px auto 20px; /* Megnövelt térköz a fixált menü alatt */
     background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
