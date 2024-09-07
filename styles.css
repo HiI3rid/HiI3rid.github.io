@@ -14,29 +14,13 @@ header {
     padding: 10px 0;
     text-align: center; /* Középre igazítás a fejléc szövegéhez */
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
-    z-index: 1000; /* Fixálás szintje */
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-}
-
-.subtitle {
-    font-size: 1.2em; /* Növelt betűméret */
-    margin-top: 5px; /* Csökkentett térköz a fő cím és a subtitle között */
-    margin-bottom: 20px; /* Térköz alatta */
-}
-
-nav {
-    position: fixed;
-    top: 50px; /* Fejléc alatt */
-    left: 0;
-    width: 100%;
-    background: #d1e7dd; /* Világos zöld háttér */
-    z-index: 1000; /* Fixálás szintje */
 }
 
 nav ul {
@@ -45,6 +29,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Középre igazítás a navigációs menühöz */
+    background: #d1e7dd; /* Világos zöld háttér */
 }
 
 nav ul li {
@@ -58,7 +43,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 100px auto 20px; /* Megnövelt térköz a fixált menü alatt */
+    margin: 60px auto 20px; /* Növelt margó az oldal alján */
     background: #fff; /* Fehér háttér */
     border-radius: 8px;
     max-width: 800px; /* Maximális szélesség beállítása */
@@ -141,7 +126,7 @@ section h2 {
 }
 
 .map {
-    margin: 20px auto;
+    margin-top: 20px;
     display: flex;
     justify-content: center; /* Középre igazítás a térképhez */
 }
@@ -167,27 +152,4 @@ ul {
 
 li {
     margin-bottom: 10px; /* Listaelemek közötti távolság */
-}
-
-/* Táblázat formázása */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px auto; /* Megnövelt térköz a táblázat körül */
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #f5deb3; /* Halvány barna háttér a fejléchez */
-    color: #333;
-}
-
-thead th {
-    background-color: #f5deb3; /* Halvány barna háttér a fejléchez */
-    color: #333;
 }
