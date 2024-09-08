@@ -59,7 +59,7 @@ section {
     max-width: 800px;
     border: 2px solid #d1e7dd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lágy árnyék */
-    scroll-padding-top: 80px; /* Állítsd be a fejléced magasságához */
+    scroll-padding-top: 110px; /* Állítsd be a fejléced magasságához */
 }
 
 .services-container {
