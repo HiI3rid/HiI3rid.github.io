@@ -60,7 +60,7 @@ section#about {
 section {
     position: relative;
     padding: 20px;
-    margin: 20px auto; /* A további szekciók közötti margó beállítása */
+    margin: 80px auto; /* A további szekciók közötti margó beállítása */
     background-color: rgba(255, 255, 255, 0.95); /* Alig átlátszó fehér */
     border-radius: 8px;
     max-width: 800px;
@@ -71,8 +71,8 @@ section {
 section::before {
     content: "";
     display: block;
-    height: 200px; /* A fejléc magassága */
-    margin-top: -200px; /* A fejléc magasságának kompenzálása */
+    height: 160px; /* A fejléc magassága */
+    margin-top: -160px; /* A fejléc magasságának kompenzálása */
     visibility: hidden;
 }
 
