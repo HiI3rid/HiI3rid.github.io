@@ -57,10 +57,6 @@ section#about {
     padding-top: 160px; /* Felső padding beállítása a fejléc magasságának kompenzálásához */
 }
 
-section#about .service-card {
-    margin-top: -40px; /* Csökkenti a kártyák tetejét az első szekcióban */
-}
-
 section {
     position: relative;
     padding: 20px;
