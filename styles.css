@@ -55,6 +55,7 @@ nav ul li a {
 
 section#about {
     padding-top: 160px; /* Felső padding beállítása a fejléc magasságának kompenzálásához */
+    margin-top: -20px; /* Csökkenti a szekció tetejének margóját */
 }
 
 section {
