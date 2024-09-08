@@ -117,11 +117,10 @@ table th {
 }
 
 footer {
-    background: #f5deb3;
-    color: #333;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    text-align: center;
+    padding: 10px;
+    background: #f5deb3; /* Halvány barna háttér */
+    color: #333; /* Sötét szürke szöveg */
+    position: relative; /* Remove any 'fixed' or 'absolute' positioning */
+    bottom: 0; /* This ensures it stays at the bottom, but scrolls normally */
 }
