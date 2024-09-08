@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 section#about {
-    padding-top: 140px; /* A fejléc magasságának megfelelően állítva */
+    margin-top: 125px; /* A fejléc magasságának megfelelően állítva */
     padding: 20px; /* Csökkentett padding */
     margin-top: 80px; /* A fix fejléc magassága miatt csökkentett margin-top */
     background-color: rgba(255, 255, 255, 0.95);
