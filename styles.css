@@ -52,12 +52,13 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 180px auto 80px; /* Több üres hely a fejléc alatt és a lábléc felett */
-    background-color: rgba(255, 255, 255, 0.95); /* Alig átlátszó fehér */
+    margin: 180px auto 80px;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     max-width: 800px;
     border: 2px solid #d1e7dd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lágy árnyék */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 100px; /* Ez hozzáadja a szükséges margót a pontos ugráshoz */
 }
 
 .services-container {
