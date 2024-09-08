@@ -68,14 +68,6 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lágy árnyék */
 }
 
-section::before {
-    content: "";
-    display: block;
-    height: 160px; /* A fejléc magassága */
-    margin-top: -160px; /* A fejléc magasságának kompenzálása */
-    visibility: hidden;
-}
-
 .services-container {
     display: flex;
     flex-direction: column;
