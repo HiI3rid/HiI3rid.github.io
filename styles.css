@@ -23,7 +23,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 140px; /* Fejléc magasságának beállítása */
+    height: 125px; /* Fejléc magasságának beállítása */
 }
 
 header h1 {
@@ -54,8 +54,7 @@ nav ul li a {
 }
 
 section#about {
-    padding-top: 140px; /* Felső padding beállítása a fejléc magasságának kompenzálásához */
-    margin-top: -20px; /* Csökkenti a szekció tetejének margóját */
+    padding-top: 125px; /* Felső padding beállítása a fejléc magasságának kompenzálásához */
 }
 
 section {
