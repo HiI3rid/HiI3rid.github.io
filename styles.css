@@ -55,15 +55,15 @@ nav ul li a {
 
 section#about {
     margin-top: 125px; /* A fejléc magasságának megfelelően állítva */
-    padding: 20px; /* Csökkentett padding */
-    margin-top: 80px; /* A fix fejléc magassága miatt csökkentett margin-top */
-    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px; /* Padding beállítása a szekció belsejében */
+    background-color: rgba(255, 255, 255, 0.95); /* Fehér háttér, enyhe átlátszósággal */
     border-radius: 8px;
     border: 2px solid #d1e7dd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lágy árnyék */
     max-width: 800px;
-    margin: 0 auto; /* Középre igazítja a szekciót */
+    margin: 0 auto; /* Középre igazítás */
 }
+
 
 
 section {
