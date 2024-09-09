@@ -282,13 +282,13 @@ section#contact li {
 }
 @media (max-width: 768px) {
      header .logo.left {
-        left: 8px; /* A bal oldali logó pozíciója a bal széltől */
-        top: 18px;  /* A bal oldali logó pozíciójának csökkentése lefelé */
+        left: 5px; /* A bal oldali logó pozíciója a bal széltől */
+        top: 20px;  /* A bal oldali logó pozíciójának csökkentése lefelé */
     }
 
     header .logo.right {
-        right: 8px; /* A jobb oldali logó pozíciója a jobb széltől */
-        top: 18px;   /* A jobb oldali logó pozíciójának csökkentése lefelé */
+        right: 5px; /* A jobb oldali logó pozíciója a jobb széltől */
+        top: 20px;   /* A jobb oldali logó pozíciójának csökkentése lefelé */
     }
 }
 }
