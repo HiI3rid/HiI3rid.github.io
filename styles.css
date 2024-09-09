@@ -206,7 +206,6 @@ section#contact li {
 /* A már meglévő CSS marad, az alábbi módosításokat adjuk hozzá */
 
 /* Fejléc mobil nézetben középre igazítása */
-/* Fejléc mobil nézetben középre igazítása */
 @media (max-width: 768px) {
     header {
         display: flex;
