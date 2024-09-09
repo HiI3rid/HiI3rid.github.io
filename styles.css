@@ -23,20 +23,11 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 125px; /* Fejléc magasságának beállítása */
-    display: flex; /* Flexbox használata a tartalom igazításához */
-    justify-content: space-between; /* A logók és szöveg közötti hely kialakítása */
-    align-items: center; /* Középre igazítja a logókat és a szöveget függőlegesen */
-    padding: 0 20px; /* A belső margó biztosítja, hogy a logók ne tapadjanak a szélekhez */
-}
-
-header h1, header h2 {
-    margin: 0;
-    text-align: center; /* A szöveg középre igazítása */
-}
-
-header h2 {
-    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -44,12 +35,21 @@ header h2 {
     width: auto;
 }
 
-.left {
-    margin-right: auto; /* A bal oldali logót a szövegtől távol tartja */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
 }
 
-.right {
-    margin-left: auto; /* A jobb oldali logót a szövegtől távol tartja */
+header h1, header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1em;
 }
 
 nav ul {
@@ -57,17 +57,23 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    background: rgba(209, 231, 221, 0.9); /* Finom átlátszóság */
+    gap: 15px;
+    background: rgba(209, 231, 221, 0.9);
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #e0e0e0; /* Egyszerű hover effekt */
 }
 
 section#about {
