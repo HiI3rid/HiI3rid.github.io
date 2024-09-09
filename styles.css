@@ -331,8 +331,8 @@ section#contact li {
 /* Profilkép konténer */
 .profile-container {
     position: relative;
-    margin-top: 400px; /* Kép távolsága a szülő elem tetejétől */
-    height: 400px; /* Szülő elem magassága */
+    margin-top: 250px; /* Kép távolsága a szülő elem tetejétől */
+    height: 250px; /* Szülő elem magassága */
     display: flex;
     justify-content: center;
     align-items: center;
