@@ -328,5 +328,20 @@ section#contact li {
         max-height: 400px; /* Maximális magasság korlátozása mobilon */
     }
 }
+/* Profilkép konténer */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Kép középre igazítása */
+    margin: 20px auto; /* Margó a kép körül, középre igazítva */
+    text-align: center; /* Kép középre igazítása a szöveggel együtt */
+}
 
+/* Profilkép */
+.profile-img {
+    border-radius: 50%; /* Kerek profilkép */
+    width: 150px; /* Kép szélessége */
+    height: 150px; /* Kép magassága */
+    object-fit: cover; /* Kép méretezése és vágása, hogy kitöltse a teret */
+    border: 3px solid #d1e7dd; /* Kép körüli szegély */
+}
 
