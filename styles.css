@@ -203,3 +203,33 @@ section#contact ul {
 section#contact li {
     margin: 10px 0;
 }
+/* A már meglévő CSS marad, az alábbi módosításokat adjuk hozzá */
+
+/* Fejléc mobil nézetben középre igazítása */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Logók és szövegek középre igazítása függőlegesen */
+        justify-content: center; /* Logók és szövegek középre igazítása vízszintesen */
+        padding: 10px;
+    }
+
+    header .logo {
+        display: flex;
+        justify-content: center; /* Kép vízszintes középre igazítása */
+        align-items: center; /* Kép függőleges középre igazítása */
+        width: 100%; /* Teljes szélesség a pontos középre igazításhoz */
+    }
+
+    header .logo img {
+        height: 100px; /* Logók kisebb méretezése mobilon */
+        margin: 0 auto; /* Logók automatikus középre igazítása */
+    }
+
+    header h1, header h2 {
+        text-align: center; /* Szövegek középre igazítása */
+        margin: 10px 0;
+    }
+}
+
