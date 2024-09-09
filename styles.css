@@ -18,13 +18,34 @@ header {
     background: linear-gradient(135deg, #f5deb3, #d1e7dd);
     color: #333;
     padding: 20px 0;
-    position: fixed;
+    position: fixed; /* Fix pozíció a képernyő tetején */
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Magas prioritás az elhelyezéshez */
     height: 125px; /* Fejléc magasságának beállítása */
 }
+
+header .logo {
+    position: absolute; /* A logók a fejléc keretein belül helyezkednek el */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo.left {
+    left: 20px; /* Beállíthatod a kívánt távolságot */
+}
+
+header .logo.right {
+    right: 20px; /* Beállíthatod a kívánt távolságot */
+}
+
+header .logo img {
+    height: 60px; /* Beállíthatod a kívánt magasságot */
+    width: auto;
+}
+
+/* Egyéb meglévő stílusok */
 
 header h1 {
     margin: 0;
@@ -173,29 +194,4 @@ section#contact ul {
 
 section#contact li {
     margin: 10px 0; /* Állítsd be a kívánt margót a listaelemek között */
-}
-
-/* Logók elhelyezése a fejléc bal és jobb oldalán */
-header .logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-header .logo.left {
-    left: 20px; /* Beállíthatod a kívánt távolságot */
-}
-
-header .logo.right {
-    right: 20px; /* Beállíthatod a kívánt távolságot */
-}
-
-header .logo img {
-    height: 100px; /* Beállíthatod a kívánt magasságot */
-    width: auto;
-}
-
-/* Fejléc relatív pozicionálása, hogy a logók pozicionálhatóak legyenek */
-header {
-    position: relative;
 }
