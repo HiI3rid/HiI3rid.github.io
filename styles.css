@@ -43,45 +43,6 @@ header .logo img {
     width: auto;
 }
 
-/* Oldal középre igazítása mobil nézetben */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Megakadályozza a vízszintes görgetést */
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Középre igazítás */
-}
-
-header, section, footer {
-    width: 100%;
-    box-sizing: border-box; /* Biztosítja, hogy a padding ne növelje az elemek szélességét */
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    section {
-        padding-left: 15px;
-        padding-right: 15px; /* Kisebb padding mobil nézetben */
-    }
-
-    header {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-
 /* Media Queries for Responsive Images */
 @media (max-width: 768px) {
     header .logo img {
