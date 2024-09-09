@@ -31,7 +31,7 @@ header {
 }
 
 .logo {
-    height: 80px; /* Állítsd be a logó méretét, ha szükséges */
+    height: 100px; /* Állítsd be a logó méretét, ha szükséges */
     width: auto;
 }
 
