@@ -206,6 +206,7 @@ section#contact li {
 /* A már meglévő CSS marad, az alábbi módosításokat adjuk hozzá */
 
 /* Fejléc mobil nézetben középre igazítása */
+/* Fejléc mobil nézetben középre igazítása */
 @media (max-width: 768px) {
     header {
         display: flex;
@@ -225,7 +226,7 @@ section#contact li {
     }
 
     header .logo img {
-        height: 65px; /* Logók kisebb méretezése mobilon */
+        height: 80px; /* Logók kisebb méretezése mobilon */
         margin: 0 auto; /* Logók automatikus középre igazítása */
     }
 
@@ -257,63 +258,29 @@ section#contact li {
     
     /* Az oldal középre igazítása */
     body {
-        margin: 0; /* Távolítsuk el a body margin-ját */
-        padding: 0; /* Távolítsuk el a body padding-ját */
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center; /* Középre igazítás a vízszintes tengelyen */
         background-color: #f5f5dc;
         text-align: center;
-        box-sizing: border-box; /* A margin és padding figyelembevételéhez */
     }
 
-    section {
+    section, nav, footer {
         width: 100%; /* Teljes szélesség biztosítása */
-        max-width: 100%; /* Maximális szélesség beállítása */
-        margin: 0 auto; /* Középre igazítás */
-        box-sizing: border-box; /* A padding és border figyelembevételéhez */
-    }
-
-    nav, footer {
-        width: 100%; /* Teljes szélesség biztosítása */
-        max-width: 100%; /* Maximális szélesség beállítása */
-        box-sizing: border-box; /* A padding és border figyelembevételéhez */
+        max-width: 1200px; /* Maximális szélesség, hogy ne legyen túl széles mobilon */
+        box-sizing: border-box;
     }
 }
 @media (max-width: 768px) {
-     header .logo.left {
-        left: 5px; /* A bal oldali logó pozíciója a bal széltől */
-        top: 20px;  /* A bal oldali logó pozíciójának csökkentése lefelé */
+    header .logo.left {
+        left: 5px; /* A bal oldali logó pozíciójának módosítása */
+        top: 20px;  /* A bal oldali logó pozíciójának módosítása */
     }
 
     header .logo.right {
-        right: 5px; /* A jobb oldali logó pozíciója a jobb széltől */
-        top: 20px;   /* A jobb oldali logó pozíciójának csökkentése lefelé */
-    }
-}
-}
-@media (max-width: 768px) {
-    body {
-        margin: 0; /* Távolítsuk el a body margin-ját */
-        padding: 0; /* Távolítsuk el a body padding-ját */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Középre igazítás a vízszintes tengelyen */
-        background-color: #f5f5dc;
-        text-align: center;
-        box-sizing: border-box; /* A margin és padding figyelembevételéhez */
-    }
-
-    section {
-        width: 100%; /* Teljes szélesség biztosítása */
-        max-width: 100%; /* Maximális szélesség beállítása */
-        margin: 0 auto; /* Középre igazítás */
-        box-sizing: border-box; /* A padding és border figyelembevételéhez */
-    }
-
-    nav, footer {
-        width: 100%; /* Teljes szélesség biztosítása */
-        max-width: 100%; /* Maximális szélesség beállítása */
-        box-sizing: border-box; /* A padding és border figyelembevételéhez */
+        right: 5px; /* A jobb oldali logó pozíciójának módosítása */
+        top: 20px;   /* A jobb oldali logó pozíciójának módosítása */
     }
 }
