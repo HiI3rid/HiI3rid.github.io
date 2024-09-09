@@ -21,16 +21,21 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Képek és cím elhelyezése */
-    align-items: center; /* Képek és cím függőleges középre igazítása */
     height: 125px;
 }
 
 header .logo {
-    flex: 1; /* Logók rugalmas méretezése */
-    display: flex;
-    justify-content: center; /* Képek középre igazítása */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo.left {
+    left: 20px;
+}
+
+header .logo.right {
+    right: 20px;
 }
 
 header .logo img {
@@ -38,40 +43,16 @@ header .logo img {
     width: auto;
 }
 
-/* Média lekérdezés a kisebb képernyőkre */
+/* Media Queries for Responsive Images */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* A logók és szövegek oszlopos elrendezése tableten és kisebb képernyőkön */
-        height: auto; /* Fejléc magasságának automatikus beállítása */
-        padding: 10px;
-    }
-
-    header .logo {
-        flex: none; /* Logók fix méretre igazítása */
-        margin-bottom: 10px;
-    }
-
     header .logo img {
-        height: 100px; /* Logók kisebb méretezése tableten */
-    }
-
-    header h1, header h2 {
-        text-align: center; /* Szövegek középre igazítása kisebb képernyőkön */
-        margin: 5px 0;
+        height: 100px; /* Adjust height for tablets and small screens */
     }
 }
 
 @media (max-width: 480px) {
     header .logo img {
-        height: 75px; /* Még kisebb képméret telefonon */
-    }
-    
-    header {
-        padding: 5px;
-    }
-    
-    header h1, header h2 {
-        font-size: 1.2em; /* Szövegek méretének csökkentése */
+        height: 75px; /* Adjust height for phones */
     }
 }
 
@@ -117,6 +98,10 @@ section {
     border: 2px solid #d1e7dd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     scroll-margin-top: 190px;
+}
+
+section#about .services-container {
+    margin-top: -10px;
 }
 
 .services-container {
