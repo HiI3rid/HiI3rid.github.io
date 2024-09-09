@@ -284,3 +284,17 @@ section#contact li {
         top: 20px;   /* A jobb oldali logó pozíciójának módosítása */
     }
 }
+@media (max-width: 480px) {
+    body {
+        padding-left: 10px; /* A bal oldali kis tér biztosítása */
+        padding-right: 10px; /* A jobb oldali kis tér biztosítása */
+        margin: 0; /* A margó eltüntetése */
+        box-sizing: border-box; /* A padding beszámítása a teljes szélességbe */
+    }
+
+    section, nav, footer {
+        width: 100%; /* Az oldalak teljes szélességének biztosítása */
+        max-width: 100%; /* A szimmetria érdekében teljes szélesség */
+    }
+}
+
