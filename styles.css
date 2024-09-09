@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+/* Háttérkép beállítása a body elemhez */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc;
+    background-color: #f5f5dc; /* Krém szín */
     color: #333;
     text-align: center;
-    background-image: url('halvany_minta.png');
-    background-size: cover;
+    background-image: url('images/background.png'); /* Háttérkép elérési útja */
+    background-size: cover; /* A háttérkép kitölti az egész képernyőt */
+    background-position: center; /* A háttérkép középre igazítva */
+    background-repeat: no-repeat; /* Ne ismételje meg a háttérképet */
+    background-attachment: fixed; /* A háttérkép fixen marad, amikor az oldal görgetése */
+}
+/* Elhomályosított réteg hozzáadása a háttérkép fölé */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Elhomályosított réteg */
+    pointer-events: none; /* Biztosítja, hogy a réteg ne zavarja a kattintásokat */
+    z-index: -1; /* A háttérkép alatt */
 }
 
 header {
@@ -92,7 +107,7 @@ section {
     position: relative;
     padding: 20px;
     margin: 80px auto;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #f5f5dc; /* Krém szín */
     border-radius: 8px;
     max-width: 800px;
     border: 2px solid #d1e7dd;
