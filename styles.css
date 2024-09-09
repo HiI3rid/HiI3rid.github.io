@@ -24,15 +24,32 @@ header {
     left: 0;
     z-index: 1000;
     height: 125px; /* Fejléc magasságának beállítása */
+    display: flex; /* Flexbox használata a tartalom igazításához */
+    justify-content: space-between; /* A logók és szöveg közötti hely kialakítása */
+    align-items: center; /* Középre igazítja a logókat és a szöveget függőlegesen */
+    padding: 0 20px; /* A belső margó biztosítja, hogy a logók ne tapadjanak a szélekhez */
 }
 
-header h1 {
+header h1, header h2 {
     margin: 0;
+    text-align: center; /* A szöveg középre igazítása */
 }
 
 header h2 {
-    margin: 5px 0 20px;
-    font-size: 1em; /* Megduplázott méret a "Gyógy- és sportmasszőr" szöveghez */
+    font-size: 1em;
+}
+
+.logo {
+    height: 80px; /* Állítsd be a logó méretét, ha szükséges */
+    width: auto;
+}
+
+.left {
+    margin-right: auto; /* A bal oldali logót a szövegtől távol tartja */
+}
+
+.right {
+    margin-left: auto; /* A jobb oldali logót a szövegtől távol tartja */
 }
 
 nav ul {
