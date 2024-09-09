@@ -174,3 +174,28 @@ section#contact ul {
 section#contact li {
     margin: 10px 0; /* Állítsd be a kívánt margót a listaelemek között */
 }
+
+/* Logók elhelyezése a fejléc bal és jobb oldalán */
+header .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo.left {
+    left: 20px; /* Beállíthatod a kívánt távolságot */
+}
+
+header .logo.right {
+    right: 20px; /* Beállíthatod a kívánt távolságot */
+}
+
+header .logo img {
+    height: 100px; /* Beállíthatod a kívánt magasságot */
+    width: auto;
+}
+
+/* Fejléc relatív pozicionálása, hogy a logók pozicionálhatóak legyenek */
+header {
+    position: relative;
+}
