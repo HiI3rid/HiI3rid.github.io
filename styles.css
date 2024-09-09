@@ -210,9 +210,10 @@ section#contact li {
     header {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Logók és szövegek középre igazítása függőlegesen */
-        justify-content: center; /* Logók és szövegek középre igazítása vízszintesen */
+        align-items: center; /* Logók és szövegek középre igazítása */
+        justify-content: center; /* Logók és szövegek középre igazítása */
         padding: 10px;
+        height: 120px; /* Fejléc magassága fixen marad */
     }
 
     header .logo {
@@ -223,41 +224,34 @@ section#contact li {
     }
 
     header .logo img {
-        height: 100px; /* Logók kisebb méretezése mobilon */
+        height: 50px; /* Logók kisebb méretezése mobilon */
         margin: 0 auto; /* Logók automatikus középre igazítása */
     }
 
-    header h1, header h2 {
-        text-align: center; /* Szövegek középre igazítása */
-        margin: 10px 0;
-    }
-}
-
-/* Fejléc arányos méretezése kisebb kijelzőkhöz */
-@media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em; /* Az oldal neve kisebb méretben jelenik meg mobilon */
+        font-size: 1.2em; /* Az oldal neve kisebb méretben jelenik meg mobilon */
+        margin: 0; /* Csökkentjük a margót */
     }
 
     header h2 {
-        font-size: 1em; /* Az oldal alatti szöveg méretének csökkentése */
-    }
-
-    header .logo img {
-        height: 80px; /* Logó kisebb mérete mobil nézetben */
+        font-size: 0.9em; /* Az oldal alatti szöveg méretének csökkentése */
+        margin: 5px 0; /* Kis margó a szöveg alatt */
     }
 
     nav ul {
-        flex-direction: column; /* Navigáció oszlopba rendezése mobil nézetben */
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: center; /* Menüpontok középre igazítása */
     }
 
     nav ul li {
-        margin: 10px 0; /* Távolság a navigációs elemek között */
+        margin: 0 10px; /* Távolság a navigációs elemek között */
     }
 
     nav ul li a {
-        font-size: 1em; /* A navigációs elemek szövegméretének csökkentése */
+        font-size: 0.8em; /* A navigációs elemek szövegméretének csökkentése */
     }
 }
-
 
