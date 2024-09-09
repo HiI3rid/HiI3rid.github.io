@@ -297,4 +297,12 @@ section#contact li {
         max-width: 100%; /* A szimmetria érdekében teljes szélesség */
     }
 }
+@media (max-width: 768px) {
+    iframe {
+        width: 100%; /* A térkép szélessége a szülő elem szélességéhez igazodik mobilon */
+        max-width: 100%; /* Nem engedi, hogy a térkép túl lógjon mobilon */
+        height: auto; /* A magasság rugalmas lesz a szélességhez képest */
+        border: 0; /* Ha van keret, eltávolítja */
+    }
+}
 
