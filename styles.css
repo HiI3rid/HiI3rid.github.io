@@ -298,11 +298,12 @@ section#contact li {
     }
 }
 @media (max-width: 768px) {
-    iframe {
-        width: 100%; /* A térkép szélessége a szülő elem szélességéhez igazodik mobilon */
-        max-width: 100%; /* Nem engedi, hogy a térkép túl lógjon mobilon */
-        height: auto; /* A magasság rugalmas lesz a szélességhez képest */
-        border: 0; /* Ha van keret, eltávolítja */
+    .map-container iframe {
+        width: 100%; /* A szélesség a konténer szélességéhez igazodik */
+        height: 100vw; /* A magasságot a viewport szélességéhez igazítjuk, így négyzet alakú lesz */
+        max-width: 400px; /* Maximális szélesség korlátozása mobilon */
+        max-height: 400px; /* Maximális magasság korlátozása mobilon */
     }
 }
+
 
