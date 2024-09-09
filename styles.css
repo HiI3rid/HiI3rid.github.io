@@ -1,51 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif; /* Módosított betűtípus */
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f5f5dc;
     color: #333;
     text-align: center;
-    background-image: url('halvany_minta.png'); /* Finom háttérminta */
+    background-image: url('halvany_minta.png');
     background-size: cover;
 }
-
-/* További stílusok változatlanok maradnak */
 
 header {
     background: linear-gradient(135deg, #f5deb3, #d1e7dd);
     color: #333;
     padding: 20px 0;
-    position: fixed; /* Fix pozíció a képernyő tetején */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Magas prioritás az elhelyezéshez */
-    height: 125px; /* Fejléc magasságának beállítása */
+    z-index: 1000;
+    height: 125px;
 }
 
 header .logo {
-    position: absolute; /* A logók a fejléc keretein belül helyezkednek el */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 header .logo.left {
-    left: 20px; /* Beállíthatod a kívánt távolságot */
+    left: 20px;
 }
 
 header .logo.right {
-    right: 20px; /* Beállíthatod a kívánt távolságot */
+    right: 20px;
 }
 
 header .logo img {
-    height: 150px; /* Beállíthatod a kívánt magasságot */
+    height: 150px;
     width: auto;
 }
 
-/* Egyéb meglévő stílusok */
+/* Media Queries for Responsive Images */
+@media (max-width: 768px) {
+    header .logo img {
+        height: 100px; /* Adjust height for tablets and small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 75px; /* Adjust height for phones */
+    }
+}
 
 header h1 {
     margin: 0;
@@ -53,7 +62,7 @@ header h1 {
 
 header h2 {
     margin: 5px 0 20px;
-    font-size: 1em; /* Megduplázott méret a "Gyógy- és sportmasszőr" szöveghez */
+    font-size: 1em;
 }
 
 nav ul {
@@ -62,7 +71,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: rgba(209, 231, 221, 0.9); /* Finom átlátszóság */
+    background: rgba(209, 231, 221, 0.9);
 }
 
 nav ul li {
@@ -75,8 +84,8 @@ nav ul li a {
 }
 
 section#about {
-    margin-top: 240px; /* Ezzel csak vizuálisan toljuk le a szekciót a fejléc alól */
-    padding-top: 20px; /* Csak annyi padding maradjon, amennyi a tartalomnak kell */
+    margin-top: 240px;
+    padding-top: 20px;
 }
 
 section {
@@ -88,11 +97,11 @@ section {
     max-width: 800px;
     border: 2px solid #d1e7dd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 190px; /* Ez a sor kerül hozzá */
+    scroll-margin-top: 190px;
 }
 
 section#about .services-container {
-    margin-top: -10px; /* Csökkenti a "Rólam" szekció kártyájának tetejét */
+    margin-top: -10px;
 }
 
 .services-container {
@@ -143,11 +152,11 @@ button:hover, .modal-btn:hover {
 }
 
 .modal-content {
-    background-color: #fff; /* Fehér háttér */
-    position: fixed; /* Fix pozíció a képernyőn */
-    top: 50%; /* Függőleges középre igazítás */
-    left: 50%; /* Vízszintes középre igazítás */
-    transform: translate(-50%, -50%); /* Középre igazítás */
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -185,13 +194,12 @@ footer {
     bottom: 0;
 }
 
-/* Kapcsolat szekció listajelek eltüntetése */
 section#contact ul {
-    list-style: none; /* Eltünteti a lista jelölőket */
-    padding: 0; /* Törli a belső padding-ot */
-    margin: 0; /* Törli a külső margót */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 section#contact li {
-    margin: 10px 0; /* Állítsd be a kívánt margót a listaelemek között */
+    margin: 10px 0;
 }
