@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 section#about {
-    margin-top: 180px; /* Ezzel csak vizuálisan toljuk le a szekciót a fejléc alól */
+    margin-top: 240px; /* Ezzel csak vizuálisan toljuk le a szekciót a fejléc alól */
     padding-top: 20px; /* Csak annyi padding maradjon, amennyi a tartalomnak kell */
 }
 
