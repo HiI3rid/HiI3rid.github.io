@@ -331,7 +331,7 @@ section#contact li {
 /* Profilkép konténer */
 .profile-container {
     position: relative; /* Biztosítja, hogy a kép relatív pozicionálású legyen */
-    margin-top: 125px; /* A fejléc magasságának megfelelően eltolás, hogy ne takarja el */
+    margin-top: 250px; /* A fejléc magasságának megfelelően eltolás, hogy ne takarja el */
     display: flex;
     justify-content: center; /* Kép középre igazítása */
     margin: 20px auto; /* Margó a kép körül, középre igazítva */
