@@ -330,12 +330,13 @@ section#contact li {
 }
 /* Profilkép konténer */
 .profile-container {
-    position: relative; /* Biztosítja, hogy a kép relatív pozicionálású legyen */
-    margin-top: 500px; /* A fejléc magasságának megfelelően eltolás, hogy ne takarja el */
+    position: relative;
+    margin-top: 400px; /* Kép távolsága a szülő elem tetejétől */
+    height: 400px; /* Szülő elem magassága */
     display: flex;
-    justify-content: center; /* Kép középre igazítása */
-    margin: 20px auto; /* Margó a kép körül, középre igazítva */
-    text-align: center; /* Kép középre igazítása a szöveggel együtt */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Profilkép */
