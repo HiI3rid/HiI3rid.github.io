@@ -205,31 +205,31 @@ section#contact li {
 }
 /* A már meglévő CSS marad, az alábbi módosításokat adjuk hozzá */
 
-/* Fejléc mobil nézetben középre igazítása */
+/* Fejléc arányos méretezése kisebb kijelzőkhöz */
 @media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Logók és szövegek középre igazítása függőlegesen */
-        justify-content: center; /* Logók és szövegek középre igazítása vízszintesen */
-        padding: 10px;
+    header h1 {
+        font-size: 1.5em; /* Az oldal neve kisebb méretben jelenik meg mobilon */
     }
 
-    header .logo {
-        display: flex;
-        justify-content: center; /* Kép vízszintes középre igazítása */
-        align-items: center; /* Kép függőleges középre igazítása */
-        width: 100%; /* Teljes szélesség a pontos középre igazításhoz */
+    header h2 {
+        font-size: 1em; /* Az oldal alatti szöveg méretének csökkentése */
     }
 
     header .logo img {
-        height: 100px; /* Logók kisebb méretezése mobilon */
-        margin: 0 auto; /* Logók automatikus középre igazítása */
+        height: 80px; /* Logó kisebb mérete mobil nézetben */
     }
 
-    header h1, header h2 {
-        text-align: center; /* Szövegek középre igazítása */
-        margin: 10px 0;
+    nav ul {
+        flex-direction: column; /* Navigáció oszlopba rendezése mobil nézetben */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Távolság a navigációs elemek között */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* A navigációs elemek szövegméretének csökkentése */
     }
 }
+
 
