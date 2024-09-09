@@ -292,3 +292,28 @@ section#contact li {
     }
 }
 }
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Távolítsuk el a body margin-ját */
+        padding: 0; /* Távolítsuk el a body padding-ját */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Középre igazítás a vízszintes tengelyen */
+        background-color: #f5f5dc;
+        text-align: center;
+        box-sizing: border-box; /* A margin és padding figyelembevételéhez */
+    }
+
+    section {
+        width: 100%; /* Teljes szélesség biztosítása */
+        max-width: 100%; /* Maximális szélesség beállítása */
+        margin: 0 auto; /* Középre igazítás */
+        box-sizing: border-box; /* A padding és border figyelembevételéhez */
+    }
+
+    nav, footer {
+        width: 100%; /* Teljes szélesség biztosítása */
+        max-width: 100%; /* Maximális szélesség beállítása */
+        box-sizing: border-box; /* A padding és border figyelembevételéhez */
+    }
+}
