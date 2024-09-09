@@ -226,7 +226,7 @@ section#contact li {
     }
 
     header .logo img {
-        height: 80px; /* Logók kisebb méretezése mobilon */
+        height: 65px; /* Logók kisebb méretezése mobilon */
         margin: 0 auto; /* Logók automatikus középre igazítása */
     }
 
@@ -272,4 +272,14 @@ section#contact li {
         max-width: 1200px; /* Maximális szélesség, hogy ne legyen túl széles mobilon */
         box-sizing: border-box;
     }
+ header .logo.left {
+        left: 10px; /* A bal oldali logó pozíciójának módosítása */
+        top: 10px;  /* A bal oldali logó pozíciójának módosítása */
+    }
+
+    header .logo.right {
+        right: 10px; /* A jobb oldali logó pozíciójának módosítása */
+        top: 10px;   /* A jobb oldali logó pozíciójának módosítása */
+    }
+}
 }
