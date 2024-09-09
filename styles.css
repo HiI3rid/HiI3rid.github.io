@@ -23,33 +23,16 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 125px;
-    box-sizing: border-box;
+    height: 125px; /* Fejléc magasságának beállítása */
 }
 
-.logo {
-    height: 100px; /* Állítsd be a logó méretét, ha szükséges */
-    width: auto;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-grow: 1;
-}
-
-header h1, header h2 {
+header h1 {
     margin: 0;
 }
 
 header h2 {
-    font-size: 1em;
+    margin: 5px 0 20px;
+    font-size: 1em; /* Megduplázott méret a "Gyógy- és sportmasszőr" szöveghez */
 }
 
 nav ul {
@@ -57,23 +40,17 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
-    background: rgba(209, 231, 221, 0.9);
+    justify-content: center;
+    background: rgba(209, 231, 221, 0.9); /* Finom átlátszóság */
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
-    padding: 10px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background: #e0e0e0; /* Egyszerű hover effekt */
 }
 
 section#about {
