@@ -226,7 +226,7 @@ section#contact li {
     }
 
     header .logo img {
-        height: 50px; /* Logók kisebb méretezése mobilon */
+        height: 80px; /* Logók kisebb méretezése mobilon */
         margin: 0 auto; /* Logók automatikus középre igazítása */
     }
 
