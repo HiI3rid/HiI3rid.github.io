@@ -284,28 +284,3 @@ section#contact li {
         top: 20px;   /* A jobb oldali logó pozíciójának módosítása */
     }
 }
-@media (max-width: 768px) {
-    /* Oldal középre igazítása mobil nézetben */
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Eltávolítja az esetleges vízszintes görgetést */
-    }
-
-    /* Tartalom teljes szélességre igazítása */
-    section, nav, footer {
-        width: 100%; /* Teljes szélesség biztosítása */
-        max-width: 100%; /* Ne legyen nagyobb, mint a képernyő szélessége */
-        margin: 0; /* Eltávolítjuk az esetleges margin-t */
-        padding: 10px; /* Tartalom belső tér biztosítása */
-        box-sizing: border-box; /* Padding és border is beleértendő a szélesség számításába */
-    }
-
-    /* Fejléc szélesség beállítása mobilon */
-    header {
-        width: 100%; /* Fejléc teljes szélességre igazítása */
-        padding: 10px;
-        box-sizing: border-box;
-    }
-}
-
