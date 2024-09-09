@@ -271,14 +271,14 @@ section#contact li {
         max-width: 1200px; /* Maximális szélesség, hogy ne legyen túl széles mobilon */
         box-sizing: border-box;
     }
- header .logo.left {
-        left: 10px; /* A bal oldali logó pozíciójának módosítása */
-        top: 10px;  /* A bal oldali logó pozíciójának módosítása */
+     header .logo.left {
+        left: 10px; /* A bal oldali logó pozíciója a bal széltől */
+        top: 30px;  /* A bal oldali logó pozíciójának csökkentése lefelé */
     }
 
     header .logo.right {
-        right: 10px; /* A jobb oldali logó pozíciójának módosítása */
-        top: 10px;   /* A jobb oldali logó pozíciójának módosítása */
+        right: 10px; /* A jobb oldali logó pozíciója a jobb széltől */
+        top: 30px;   /* A jobb oldali logó pozíciójának csökkentése lefelé */
     }
 }
 }
