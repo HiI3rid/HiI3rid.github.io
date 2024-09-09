@@ -54,22 +54,19 @@ nav ul li a {
 }
 
 section#about {
-    margin-top: 240px; /* Ezzel csak vizuálisan toljuk le a szekciót a fejléc alól */
-    padding-top: 20px; /* Csak annyi padding maradjon, amennyi a tartalomnak kell */
+    padding-top: 125px; /* Felső padding beállítása a fejléc magasságának kompenzálásához */
 }
 
 section {
     position: relative;
     padding: 20px;
-    margin: 80px auto;
-    background-color: rgba(255, 255, 255, 0.95);
+    margin: 80px auto; /* A további szekciók közötti margó beállítása */
+    background-color: rgba(255, 255, 255, 0.95); /* Alig átlátszó fehér */
     border-radius: 8px;
     max-width: 800px;
     border: 2px solid #d1e7dd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 70px; /* Ez a sor kerül hozzá */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lágy árnyék */
 }
-
 
 section#about .services-container {
     margin-top: -10px; /* Csökkenti a "Rólam" szekció kártyájának tetejét */
