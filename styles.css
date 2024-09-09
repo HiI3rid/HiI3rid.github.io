@@ -330,6 +330,8 @@ section#contact li {
 }
 /* Profilkép konténer */
 .profile-container {
+    position: relative; /* Biztosítja, hogy a kép relatív pozicionálású legyen */
+    margin-top: 125px; /* A fejléc magasságának megfelelően eltolás, hogy ne takarja el */
     display: flex;
     justify-content: center; /* Kép középre igazítása */
     margin: 20px auto; /* Margó a kép körül, középre igazítva */
@@ -339,9 +341,10 @@ section#contact li {
 /* Profilkép */
 .profile-img {
     border-radius: 50%; /* Kerek profilkép */
-    width: 150px; /* Kép szélessége */
-    height: 150px; /* Kép magassága */
+    width: 300px; /* Kép szélessége */
+    height: 300px; /* Kép magassága */
     object-fit: cover; /* Kép méretezése és vágása, hogy kitöltse a teret */
     border: 3px solid #d1e7dd; /* Kép körüli szegély */
 }
+
 
