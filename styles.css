@@ -220,6 +220,19 @@ section#contact li {
 }
 /* A már meglévő CSS marad, az alábbi módosításokat adjuk hozzá */
 
+/* Alcímek (h3) középre igazítása a házirend szakaszon belül */
+#hazirend h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Bekezdések sorkizárása a házirend szakaszon belül */
+#hazirend p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
 /* Fejléc mobil nézetben középre igazítása */
 /* Fejléc mobil nézetben középre igazítása */
 @media (max-width: 768px) {
