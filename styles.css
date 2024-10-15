@@ -8,7 +8,7 @@ body {
     background-color: #f5f5dc; /* Krém szín */
     color: #333;
     text-align: center;
-    background-image: url('images/hatterjo.png'); /* Háttérkép elérési útja */
+    background-image: url('images/background.jpg'); /* Háttérkép elérési útja */
     background-size: cover; /* A háttérkép kitölti az egész képernyőt */
     background-position: center; /* A háttérkép középre igazítva */
     background-repeat: no-repeat; /* Ne ismételje meg a háttérképet */
